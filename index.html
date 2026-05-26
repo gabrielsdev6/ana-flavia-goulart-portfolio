@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ana Flavia Goulart — Beauty Artist · Noir Galerie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Italiana&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-star" id="cursorStar">
+  <svg viewBox="0 0 40 40" fill="none">
+    <path d="M20 2 L22 18 L38 20 L22 22 L20 38 L18 22 L2 20 L18 18 Z" fill="#D9B27A" opacity="0.9"/>
+    <circle cx="20" cy="20" r="2" fill="#0A0707"/>
+  </svg>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <ul class="nav__links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#portfolio">Portfólio</a></li>
+  </ul>
+  <a href="#topo" class="nav__brand">
+    Ana Flavia Goulart
+    <small>Beauty Artist · Est. MMXXVI</small>
+  </a>
+  <div class="nav__right">
+    <a href="#agendar" class="nav__book">
+      Agendar
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo">
+  <div class="hero__copy">
+    <div class="eyebrow reveal">Beauty Artist · Atelier Piumhi</div>
+    <h1 class="hero__title reveal d1">
+      Feita para os dias<br>
+      que merecem<br>
+      ser <em>lembrados.</em>
+    </h1>
+    <span class="hero__sig reveal d2">Ana Flavia Goulart · MMXXVI</span>
+    <p class="hero__tagline reveal d3">
+      Da escuta ao espelho — cada detalhe pensado
+      para você, e só para você.
+    </p>
+    <div class="hero__cta reveal d4">
+      <a href="#agendar" class="btn">
+        Agendar maquiagem
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a href="#portfolio" class="btn btn--ghost">Ver portfólio</a>
+    </div>
+  </div>
+
+  <div class="hero__portrait reveal d3">
+    <img src="ana_noir.png" alt="Ana Flavia Goulart" class="hero__photo" />
+    <div class="frame"></div>
+    <div class="cap">A·F·G · MMXXVI · Atelier Piumhi</div>
+  </div>
+
+  <div class="hero__meta">Atelier · Piumhi · Atende em domicílio</div>
+  <div class="hero__rotate" aria-hidden="true">
+    <svg viewBox="0 0 110 110">
+      <defs>
+        <path id="heroSeal" d="M55,55 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0" fill="none"/>
+      </defs>
+      <text font-family="Italiana, serif" font-size="8" letter-spacing="3" fill="#D9B27A">
+        <textPath href="#heroSeal">· BEAUTY ARTIST · DESDE 2026 · A·F·G · MAISON · </textPath>
+      </text>
+    </svg>
+    <div class="center">✦</div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span>Maquiagem para Noivas</span>
+    <span>Editorial &amp; Beauty</span>
+    <span>Ensaios Fotográficos</span>
+    <span>Atendimento em Domicílio</span>
+    <span>Desde MMXXVI</span>
+    <span>Maquiagem para Noivas</span>
+    <span>Editorial &amp; Beauty</span>
+    <span>Ensaios Fotográficos</span>
+    <span>Atendimento em Domicílio</span>
+    <span>Desde MMXXVI</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="sobre">
+  <div class="section__head">
+    <div>
+      <div class="section__eyebrow reveal">N°01 · A Artista</div>
+      <h2 class="section__title reveal d1">
+        Maquiagem como<br>uma <em>linguagem</em> sua.
+      </h2>
+    </div>
+    <div class="section__meta reveal d2"><em>Atelier em Piumhi</em><br>Minas Gerais · Brasil</div>
+  </div>
+
+  <div class="about">
+    <div class="about__visual reveal">
+      <img src="ana_noir.png" alt="Ana Flavia Goulart" class="about__photo" />
+      <div class="frame"></div>
+      <div class="about__sig">Ana</div>
+    </div>
+
+    <div>
+      <p class="about__lead reveal">
+        «&nbsp;A maquiagem certa é a que <em>desaparece</em> no rosto e
+        deixa a mulher aparecer.&nbsp;»
+      </p>
+      <p class="about__body reveal d1">
+        Beleza não é padrão — é presença. É aquele detalhe que faz uma pessoa entrar num
+        ambiente e ser notada antes mesmo de dizer uma palavra. É isso que busco em cada
+        trabalho que assino.
+      </p>
+      <p class="about__body reveal d2">
+        Sou Ana Flavia Goulart, Beauty Artist formada e movida pela arte de transformar.
+        Cada atendimento começa na escuta e termina no olhar de quem se vê no espelho e sorri.
+      </p>
+      <div class="about__specs reveal d3">
+        <span class="spec">Maquiagem Social</span>
+        <span class="spec">Festas & Formaturas</span>
+        <span class="spec">Ensaios Fotográficos</span>
+      </div>
+      <div class="about__stats reveal d4">
+        <div class="stat">
+          <div class="stat__num">1<em style="font-style: normal">:1</em></div>
+          <div class="stat__label">Atendimento individual e exclusivo</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">0</div>
+          <div class="stat__label">Pressa em cada atendimento</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">100<em>%</em></div>
+          <div class="stat__label">Personalização por cliente</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="section" id="servicos" style="padding-top: 60px;">
+  <div class="section__head">
+    <div>
+      <div class="section__eyebrow reveal">N°02 · Serviços</div>
+      <h2 class="section__title reveal d1">
+        Cada momento<br>tem o seu <em>gesto</em>.
+      </h2>
+    </div>
+    <div class="section__meta reveal d2"><em>A partir de</em><br>R$ 130</div>
+  </div>
+
+  <div class="services reveal">
+
+    <a href="#agendar" class="svc">
+      <div class="svc__num">N° 01</div>
+      <div class="svc__name">Maquiagem<br><em>Social</em></div>
+      <div class="svc__desc">Para o dia a dia especial, encontros, reuniões e ocasiões que pedem um olhar mais cuidado e personalizado.</div>
+      <div class="svc__from">a partir de<b>R$ 130</b></div>
+      <div class="svc__arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </a>
+
+    <a href="#agendar" class="svc">
+      <div class="svc__num">N° 02</div>
+      <div class="svc__name">Festas <em>&amp;</em> Formaturas</div>
+      <div class="svc__desc">Olhar marcante, pele luminosa e fixação para a noite inteira. Para bailes, debutantes e jantares.</div>
+      <div class="svc__from">a partir de<b>R$ 130</b></div>
+      <div class="svc__arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </a>
+
+    <a href="#agendar" class="svc">
+      <div class="svc__num">N° 03</div>
+      <div class="svc__name">Ensaios <em>fotográficos</em></div>
+      <div class="svc__desc">Maquiagem pensada para a câmera — de books pessoais a campanhas, com acompanhamento durante o set.</div>
+      <div class="svc__from">a partir de<b>R$ 130</b></div>
+      <div class="svc__arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </a>
+
+    <a href="#agendar" class="svc">
+      <div class="svc__num">N° 04</div>
+      <div class="svc__name"><em>Outros</em></div>
+      <div class="svc__desc">Tem algo diferente em mente? Entre em contato e encontramos juntas o serviço ideal para o seu momento.</div>
+      <div class="svc__from">a partir de<b>R$ 130</b></div>
+      <div class="svc__arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="section" id="portfolio" style="padding-top: 60px;">
+  <div class="section__head">
+    <div>
+      <div class="section__eyebrow reveal">N°03 · Portfólio</div>
+      <h2 class="section__title reveal d1">
+        Pequenas <em>obras</em>.
+      </h2>
+    </div>
+    <div class="section__meta reveal d2"><em>Selecionados</em><br>MMXXVI</div>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <a class="shot reveal" data-cat="Portfólio · Cliente" data-name="Nena" data-bg="" data-angles="Galeria/nena02.jpeg">
+      <div class="shot__img">
+        <img src="Galeria/nena01.jpeg" alt="Nena" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="shot__overlay"></div>
+      <div class="shot__frame"></div>
+      <div class="shot__label">N° 001</div>
+      <div class="shot__plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+      <div class="shot__info">
+        <div class="shot__cat">Portfólio · Cliente</div>
+        <div class="shot__name">Nena</div>
+      </div>
+    </a>
+
+    <a class="shot reveal d1" data-cat="Portfólio · Cliente" data-name="Nicole" data-bg="" data-angles="Galeria/nic01.jpeg,Galeria/nico03.jpeg">
+      <div class="shot__img">
+        <img src="Galeria/nic02.jpeg" alt="Nicole" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="shot__overlay"></div>
+      <div class="shot__frame"></div>
+      <div class="shot__label">N° 002</div>
+      <div class="shot__plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+      <div class="shot__info">
+        <div class="shot__cat">Portfólio · Cliente</div>
+        <div class="shot__name">Nicole</div>
+      </div>
+    </a>
+
+    <a class="shot reveal d2" data-cat="Portfólio · Cliente" data-name="Suelen" data-bg="" data-angles="Galeria/suelen01.jpeg,Galeria/suelen02.jpeg">
+      <div class="shot__img">
+        <img src="Galeria/suelen03.jpeg" alt="Suelen" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="shot__overlay"></div>
+      <div class="shot__frame"></div>
+      <div class="shot__label">N° 003</div>
+      <div class="shot__plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+      <div class="shot__info">
+        <div class="shot__cat">Portfólio · Cliente</div>
+        <div class="shot__name">Suelen</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<section class="section" id="depoimentos" style="padding-top: 60px;">
+  <div class="section__head">
+    <div>
+      <div class="section__eyebrow reveal">N°04 · Depoimentos</div>
+      <h2 class="section__title reveal d1">
+        Palavras das<br>minhas <em>clientes</em>.
+      </h2>
+    </div>
+    <div class="section__meta reveal d2"><em>+ 380 noivas</em><br>★ 5,0 / 5,0</div>
+  </div>
+
+  <div class="testimonials">
+    <article class="t-card reveal">
+      <div class="t-stars">★ ★ ★ ★ ★</div>
+      <p class="t-text">A Ana ouviu cada detalhe do meu casamento antes mesmo de tocar em um pincel. No dia, eu me olhei no espelho e chorei. Era eu, mas a melhor versão de mim.</p>
+      <div class="t-meta">
+        <div class="t-avatar">
+          <svg viewBox="0 0 60 60">
+            <defs><linearGradient id="av1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f3d6c2"/><stop offset="1" stop-color="#b27a6e"/></linearGradient></defs>
+            <rect width="60" height="60" fill="#2A1518"/>
+            <ellipse cx="30" cy="28" rx="14" ry="16" fill="url(#av1)"/>
+            <path d="M14 24 Q12 8 30 4 Q48 8 46 24" fill="#0a0306"/>
+            <path d="M14 60 Q14 44 30 42 Q46 44 46 60 Z" fill="#0a0306"/>
+            <path d="M24 34 Q30 32 36 34" stroke="#5a0f1c" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <div class="t-name">Mariana Carvalho</div>
+          <div class="t-role">Noiva · Toscana 2026</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="t-card reveal d1">
+      <div class="t-stars">★ ★ ★ ★ ★</div>
+      <p class="t-text">Fiz o ensaio de gravidez com a Ana e foi um dos dias mais bonitos da minha vida. Ela tem mãos delicadas e uma sensibilidade rara. Indico de olhos fechados.</p>
+      <div class="t-meta">
+        <div class="t-avatar">
+          <svg viewBox="0 0 60 60">
+            <defs><linearGradient id="av2" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fbe5d0"/><stop offset="1" stop-color="#c9967a"/></linearGradient></defs>
+            <rect width="60" height="60" fill="#4A2A2A"/>
+            <ellipse cx="30" cy="28" rx="14" ry="16" fill="url(#av2)"/>
+            <path d="M12 28 Q10 6 30 2 Q50 6 48 28 Q50 40 44 50 Q48 36 44 24 Q40 12 30 12 Q20 12 16 24 Q12 36 16 50 Q10 40 12 28" fill="#3d2010"/>
+            <path d="M14 60 Q14 44 30 42 Q46 44 46 60 Z" fill="#fff" opacity=".5"/>
+            <path d="M24 34 Q30 32 36 34" stroke="#7a2230" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <div class="t-name">Sophia Almeida</div>
+          <div class="t-role">Ensaio · Maternidade</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="t-card reveal d2">
+      <div class="t-stars">★ ★ ★ ★ ★</div>
+      <p class="t-text">Trabalho com a Ana há quatro anos em campanhas e editoriais. Cliente, modelo e fotógrafo saem felizes do set. Profissionalismo de primeiro nível.</p>
+      <div class="t-meta">
+        <div class="t-avatar">
+          <svg viewBox="0 0 60 60">
+            <defs><linearGradient id="av3" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#e8c2a4"/><stop offset="1" stop-color="#8c5b48"/></linearGradient></defs>
+            <rect width="60" height="60" fill="#6B3A3F"/>
+            <ellipse cx="30" cy="28" rx="14" ry="16" fill="url(#av3)"/>
+            <path d="M14 28 Q12 8 30 4 Q48 8 46 28 L48 18 L46 30 L48 38" fill="#0a0306"/>
+            <path d="M14 60 Q14 44 30 42 Q46 44 46 60 Z" fill="#0a0306"/>
+            <path d="M22 32 L28 34 M32 34 L38 32" stroke="#0a0306" stroke-width="1.4"/>
+            <path d="M26 42 Q30 40 34 42" stroke="#5a0f1c" stroke-width="1.4" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <div class="t-name">Carolina Vega</div>
+          <div class="t-role">Fotógrafa · Vogue BR</div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ============ AGENDAR ============ -->
+<section class="booking" id="agendar">
+  <div>
+    <div class="eyebrow reveal">N°06 · Vamos conversar</div>
+    <h2 class="booking__title reveal d1">Agende a sua <em>maquiagem</em>.</h2>
+    <p class="booking__desc reveal d2">
+      Conte-me sobre o seu dia. Respondo pessoalmente em até 24 horas
+      e desenhamos juntas o seu ritual de beleza.
+    </p>
+    <div class="booking__contacts reveal d3">
+      <a href="https://wa.me/5537998122843" class="booking__contact">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.4 18l-1.4 5 5.2-1.4A11 11 0 1 0 20.5 3.5Zm-8.5 17.4a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3 .8.8-3-.2-.3a9.4 9.4 0 1 1 7.5 4Zm5.2-6.9c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8 1-1 1.1c-.2.2-.4.2-.7 0a7.6 7.6 0 0 1-2.3-1.4 8.5 8.5 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.7-1.8c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7s1.8 2.7 4.4 3.8a14 14 0 0 0 1.5.5 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.4Z"/></svg>
+        <span><small>WhatsApp</small>+55 37 99812-2843</span>
+      </a>
+      <a href="#" class="booking__contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <span><small>Atelier</small>Rua Teresa Hostalácio · Piumhi</span>
+      </a>
+    </div>
+  </div>
+
+  <form class="booking__form reveal d2" id="bookingForm">
+    <div class="field">
+      <label>Nome</label>
+      <input type="text" id="fNome" placeholder="como devo te chamar" required />
+    </div>
+    <div class="field--row">
+      <div class="field">
+        <label>WhatsApp</label>
+        <input type="tel" id="fTel" placeholder="(37) 99812-2843" required />
+      </div>
+      <div class="field">
+        <label>Data do evento</label>
+        <input type="text" id="fData" placeholder="dd / mm / aaaa" />
+      </div>
+    </div>
+    <div class="field">
+      <label>Ocasião</label>
+      <select id="fOcasiao">
+        <option>Maquiagem Social</option>
+        <option>Festa ou Formatura</option>
+        <option>Ensaio Fotográfico</option>
+        <option>Evento ou Casamento como convidada</option>
+        <option>Outros</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Conte-me sobre o seu dia</label>
+      <textarea id="fMsg" rows="3" placeholder="local, horário, inspirações..."></textarea>
+    </div>
+    <button class="btn" type="submit" id="bookingBtn">
+      Enviar pedido de agenda
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </form>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div>
+      <div class="footer__brand">Ana Flavia Goulart<small>Beauty Artist · Piumhi</small></div>
+      <p class="footer__motto">«&nbsp;A noite tem o seu perfume. A beleza, o seu silêncio.&nbsp;»</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/>
+            <path d="M14 4c0 2.5 2 4.5 5 4.5"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v10M9 14c0-2 1.5-4 3.5-4S15 11.5 15 13s-1 3-2.5 3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navegar</h4>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#agendar">Agendar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="#servicos">Noivas</a></li>
+        <li><a href="#servicos">Festas &amp; Formaturas</a></li>
+        <li><a href="#servicos">Ensaios</a></li>
+        <li><a href="#servicos">Eventos</a></li>
+        <li><a href="#servicos">Editoriais</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/5537998122843">+55 37 99812-2843</a></li>
+        <li><a href="https://maps.app.goo.gl/wBuj7XLwVA7ygvUv8">Rua Teresa Hostalácio</a></li>
+        <li><a href="https://maps.app.goo.gl/wBuj7XLwVA7ygvUv8">Piumhi · MG</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__final">
+    <div>© MMXXVI Ana Flavia Goulart Beauty Atelier</div>
+    <em>Feito à mão em Piumhi, com amor.</em>
+    <div>Atendimento com hora marcada</div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a class="wa" href="https://wa.me/5537998122843" target="_blank" rel="noopener">
+  <span class="wa__label">Conversar no WhatsApp</span>
+  <span class="wa__btn">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.5 3.5A11 11 0 0 0 3.4 18l-1.4 5 5.2-1.4A11 11 0 1 0 20.5 3.5Zm-8.5 17.4a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3 .8.8-3-.2-.3a9.4 9.4 0 1 1 7.5 4Zm5.2-6.9c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8 1-1 1.1c-.2.2-.4.2-.7 0a7.6 7.6 0 0 1-2.3-1.4 8.5 8.5 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.7-1.8c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7s1.8 2.7 4.4 3.8a14 14 0 0 0 1.5.5 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.4Z"/>
+    </svg>
+  </span>
+</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__nav prev" id="lbPrev" aria-label="Anterior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="lightbox__inner" id="lbInner">
+    <button class="lightbox__close" id="lbClose" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox__frame"></div>
+    <div class="lightbox__caption">
+      <div class="lightbox__cat" id="lbCat"></div>
+      <div class="lightbox__name" id="lbName"></div>
+    </div>
+  </div>
+  <button class="lightbox__nav next" id="lbNext" aria-label="Próxima">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
+<script src="main.js" defer></script>
+
+</body>
+</html>
