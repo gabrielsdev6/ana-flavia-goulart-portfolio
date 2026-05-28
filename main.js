@@ -159,6 +159,19 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') nextLB(1);
 });
 
+/* ============ Máscara de data ============ */
+const fData = document.getElementById('fData');
+fData.addEventListener('keydown', (e) => {
+  const allowed = ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab'];
+  if (!allowed.includes(e.key) && !/^\d$/.test(e.key)) e.preventDefault();
+});
+fData.addEventListener('input', () => {
+  let v = fData.value.replace(/\D/g, '').slice(0, 8);
+  if (v.length > 4)      v = v.slice(0,2) + '/' + v.slice(2,4) + '/' + v.slice(4);
+  else if (v.length > 2) v = v.slice(0,2) + '/' + v.slice(2);
+  fData.value = v;
+});
+
 /* ============ Formulário → WhatsApp ============ */
 const WA_NUMBER = '5537998122843';
 
