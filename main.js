@@ -159,6 +159,20 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') nextLB(1);
 });
 
+/* ============ Máscara de WhatsApp ============ */
+const fTel = document.getElementById('fTel');
+fTel.addEventListener('keydown', (e) => {
+  const allowed = ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab'];
+  if (!allowed.includes(e.key) && !/^\d$/.test(e.key)) e.preventDefault();
+});
+fTel.addEventListener('input', () => {
+  let v = fTel.value.replace(/\D/g, '').slice(0, 11);
+  if (v.length > 7)      v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+  else if (v.length > 2) v = '(' + v.slice(0,2) + ') ' + v.slice(2);
+  else if (v.length > 0) v = '(' + v;
+  fTel.value = v;
+});
+
 /* ============ Máscara de data ============ */
 const fData = document.getElementById('fData');
 fData.addEventListener('keydown', (e) => {
