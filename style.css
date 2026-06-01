@@ -730,77 +730,6 @@ a, button, input, textarea, select, .clickable { cursor: none; }
 .bg-ensaio-2{ background: linear-gradient(150deg, #5A4220 0%, #1A1110 100%); }
 .bg-event-1{ background: linear-gradient(150deg, #2A1518 0%, #0A0707 100%); }
 
-/* ============ TESTIMONIALS ============ */
-.testimonials{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.t-card{
-  padding: 44px 36px 32px;
-  background: rgba(217,178,122,0.03);
-  border: 1px solid rgba(217,178,122,0.2);
-  position: relative;
-  display:flex; flex-direction: column;
-  transition: all 0.5s cubic-bezier(.2,.8,.2,1);
-}
-.t-card::before{
-  content: "\201C";
-  position: absolute;
-  top: -18px; left: 24px;
-  font-family: var(--serif);
-  font-size: 100px;
-  line-height: 1;
-  color: var(--gold-bright);
-  opacity: 0.55;
-}
-.t-card:hover{
-  transform: translateY(-6px);
-  border-color: var(--gold-bright);
-  background: rgba(217,178,122,0.06);
-  box-shadow: 0 28px 60px -28px rgba(217,178,122,0.3);
-}
-.t-stars{
-  display:flex; gap: 4px;
-  color: var(--gold-bright);
-  margin-bottom: 22px;
-  font-size: 15px;
-}
-.t-text{
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 20px;
-  line-height: 1.55;
-  color: var(--cream);
-  margin-bottom: 28px;
-  flex: 1;
-}
-.t-meta{
-  display:flex; align-items:center; gap: 16px;
-  padding-top: 22px;
-  border-top: 1px solid rgba(217,178,122,0.18);
-}
-.t-avatar{
-  width: 56px; height: 56px;
-  overflow: hidden;
-  position:relative;
-  border: 1px solid var(--gold-bright);
-}
-.t-avatar svg{ width: 100%; height: 100%; }
-.t-name{
-  font-family: var(--serif);
-  font-size: 21px;
-  color: var(--cream);
-  line-height: 1.1;
-}
-.t-role{
-  font-family: var(--body);
-  font-size: 10px;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--cream-dim);
-  margin-top: 6px;
-}
 
 /* ============ BOOKING ============ */
 .booking{
@@ -940,45 +869,6 @@ a, button, input, textarea, select, .clickable { cursor: none; }
   justify-content: center;
 }
 
-/* ============ WhatsApp Float ============ */
-.wa{
-  position: fixed;
-  bottom: 28px; right: 28px;
-  z-index: 90;
-  display:flex; align-items:center; gap: 12px;
-  text-decoration:none;
-}
-.wa__btn{
-  width: 64px; height: 64px;
-  border-radius: 50%;
-  background: linear-gradient(140deg, #1F8B5C 0%, #0E5E3D 100%);
-  color: #fff;
-  display:flex; align-items:center; justify-content:center;
-  box-shadow: 0 14px 40px -10px rgba(31,139,92,0.55);
-  transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
-  animation: wa-pulse 2.5s ease-in-out infinite;
-}
-@keyframes wa-pulse{
-  0%,100%{ box-shadow: 0 14px 40px -10px rgba(31,139,92,0.55), 0 0 0 0 rgba(31,139,92,0.4); }
-  50%{ box-shadow: 0 14px 40px -10px rgba(31,139,92,0.55), 0 0 0 14px rgba(31,139,92,0); }
-}
-.wa:hover .wa__btn{ transform: scale(1.08) rotate(-6deg); }
-.wa__btn svg{ width: 28px; height: 28px; }
-.wa__label{
-  background: var(--cream);
-  color: var(--noir);
-  padding: 10px 18px;
-  font-family: var(--body);
-  font-size: 10px;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  opacity: 0;
-  transform: translateX(10px);
-  transition: opacity 0.4s, transform 0.4s;
-  box-shadow: 0 8px 24px -8px rgba(0,0,0,0.5);
-}
-.wa:hover .wa__label{ opacity: 1; transform: none; }
 
 /* ============ FOOTER ============ */
 .footer{ padding: 100px 56px 32px; }
@@ -1193,7 +1083,7 @@ a, button, input, textarea, select, .clickable { cursor: none; }
   background: rgba(10,7,7,0.55);
   color: var(--cream);
   display: flex; align-items: center; justify-content: center;
-  cursor: pointer;
+  cursor: none;
   transition: all 0.25s;
 }
 .lb-angle-btn:hover{
@@ -1235,8 +1125,7 @@ a, button, input, textarea, select, .clickable { cursor: none; }
   .gallery{ grid-auto-rows: 180px; }
   .gallery .shot:nth-child(n){ grid-column: span 6; grid-row: span 1; }
   .gallery .shot:nth-child(1), .gallery .shot:nth-child(6){ grid-row: span 2; }
-  .testimonials{ grid-template-columns: 1fr; }
-  .booking{ grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
+.booking{ grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
   .footer{ padding: 80px 24px 32px; }
   .footer__top{ grid-template-columns: 1fr 1fr; gap: 36px; }
   .footer__final{ flex-direction:column; gap: 14px; text-align:center; }

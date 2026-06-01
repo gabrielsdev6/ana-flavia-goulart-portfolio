@@ -23,7 +23,7 @@ function animateStar(){
 }
 animateStar();
 
-document.querySelectorAll('a, button, input, textarea, select, .shot, .svc, .t-card').forEach(el => {
+document.querySelectorAll('a, button, input, textarea, select, .shot, .svc').forEach(el => {
   el.addEventListener('mouseenter', () => { star.classList.add('hover'); dot.classList.add('hover'); });
   el.addEventListener('mouseleave', () => { star.classList.remove('hover'); dot.classList.remove('hover'); });
 });
